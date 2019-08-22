@@ -1,0 +1,26 @@
+<% include head %>
+
+<body>
+        <div class='container'>
+                <div class='row'>
+                    <div class='col'>
+                    <h1><%= parsedData.title %></h1>
+        <div class="container">
+                <div class="row">
+                <div class="col-sm">
+                    <img src="<%= imageBaseUrl + parsedData.poster_path %>" />
+                </div>
+                <div class="col-sm">
+                    <ul>
+                            <li><%= parsedData.tagline %></li>
+                            <li>Runtime: <%= parsedData.runtime %> </li>
+                            <li>Release Date: <%= parsedData.release_date %></li>
+                            <li><a href=<%= parsedData.homepage %>>Movie Site</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <p><%= parsedData.overview %></p>
+                </div>
+                </div>
+            </div>
+        </div>
